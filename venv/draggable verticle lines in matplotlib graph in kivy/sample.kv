@@ -1,0 +1,19 @@
+<DrawPlot>:
+    orientation: 'vertical'
+
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: 1, None
+        height: main_title.height
+
+        Label:
+            id: main_title
+            text: "Plotting using Matplotlib in Kivy"
+            font_size: '35sp'
+            size_hint: 1, None
+            height: self.height
+
+        Label:
+            size_hint_x: 0.8
+            source: root.draw_my_plot() #<=== initial plot placement
+
